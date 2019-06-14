@@ -5,7 +5,7 @@ const colsList = [
     { caption: "Service", field: "service_caption", sort: "asc", class: "text-center" },
     { caption: "Provider", field: "provider", sort: "asc", class: "text-center" },
     { caption: "Quota", field: "quota_formatted", sort: "asc", format: formatNumber, class: "text-center" },
-    { caption: "Package Period", field: "package_period", sort: "asc", format: convertHour, class: "text-center" },
+    { caption: "Period", field: "package_period", sort: "asc", format: convertHour, class: "text-center" },
     { caption: "Min Stake", field: "min_stake_quantity_formatted", format: formatNumber, class: "text-center", sort: "asc" },
     { caption: "Unstake Period", field: "min_unstake_period", sort: "asc", format: convertHour, class: "text-center" }
 ]
@@ -14,7 +14,7 @@ const initialState = {
     loaded: false,
     loading: false,
     filterField: "all",
-    sortCol: colsList[(Math.floor(Math.random() * colsList.length) + 1)-1],
+    sortCol: { field: "shuffle" },
     searchText: "",
     orig: null,
     results: null,

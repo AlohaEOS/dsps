@@ -16,9 +16,14 @@ export function convertHour(_sec) {
 };
 
 export function sort(_data, _field, _order) {
-    let data = collection.sortBy(_data, [_d => {return _d[_field]}]);
-    if(_order === "desc")
-        data.reverse();
+    let data;
+    if (_field === 'shuffle') {
+        data = collection.shuffle(_data);
+    } else {
+        data = collection.sortBy(_data, [_d => {return _d[_field]}]);
+        if(_order === "desc")
+            data.reverse();
+    }
     return data;
 }
 
