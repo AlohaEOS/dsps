@@ -1,7 +1,7 @@
 
 .dsp-packages-list {
     background: #ffffff;
-    border-radius: 3px;
+    //border-radius: 3px;
     min-height: 250px;
 
     .login-alert {
@@ -27,7 +27,7 @@
             tr {
                 td {
                     height: 90px;
-                    font-size: 18px;
+                    font-size: 1.0rem;
                     .provider {
                         .value {
                             font-weight: bold;
@@ -60,5 +60,22 @@
         .dropdown {
             display: inline;
         }
+    }
+    .search-input {
+        min-width: 150px;
+        width: auto;
+        display: inline;
+        margin-left: 15px;
+        padding-top: 2px;
+    }
+    .form-group {
+        margin-bottom: 0;
+    }
+    .custom-control-input:checked ~ .custom-control-label::before {
+        border-color: #3131ff;
+        background-color: #3131ff;
+    }
+    .dropdown-item.active, .dropdown-item:active {
+        background-color: #3131ff;
     }
 }

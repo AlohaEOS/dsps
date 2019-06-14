@@ -23,7 +23,7 @@ const SocialMedia = ({data}) => {
                 return (
                     <li key={_name}>
                         <a rel="noopener noreferrer" href={`${appConfig.SOCIAL_MEDIA[_name].url}/${appConfig.SOCIAL_MEDIA[_name].pre_text}${data[_name]}`} target="_blank">
-                            <FontAwesomeIcon icon={appConfig.SOCIAL_MEDIA[_name].icon} />
+                            <FontAwesomeIcon icon={appConfig.SOCIAL_MEDIA[_name].icon} size="lg" color="#3131ff" />
                         </a>
                     </li>
                 );
@@ -63,7 +63,7 @@ const ProviderDetails = ({ match, dispatch, providers, stakes, loading, loadingS
                                 </div>
                                 <div className="name">{provider.details && provider.details.name ? provider.details.name : provider.account}</div>
                                 {provider.details && provider.details.social && (
-                                    <div className="social-media mt-5 mb-5">
+                                    <div className="social-media mt-3 mb-3">
                                         <SocialMedia data={provider.details.social} />
                                     </div>
                                 )}
@@ -86,7 +86,7 @@ const ProviderDetails = ({ match, dispatch, providers, stakes, loading, loadingS
                                                     <tr>
                                                         <td>Website</td>
                                                         <td>
-                                                            <a href={provider.details.website}>{provider.details.website}</a>
+                                                            <a target="_blank" href={provider.details.website}>{provider.details.website}</a>
                                                         </td>
                                                     </tr>
                                                 )}
@@ -94,7 +94,7 @@ const ProviderDetails = ({ match, dispatch, providers, stakes, loading, loadingS
                                                     <tr>
                                                         <td>Code Of Conduct</td>
                                                         <td>
-                                                            <a href={provider.details.code_of_conduct}>{provider.details.code_of_conduct}</a>
+                                                            <a target="_blank" href={provider.details.code_of_conduct}>{provider.details.code_of_conduct}</a>
                                                         </td>
                                                     </tr>
                                                 )}
@@ -102,7 +102,7 @@ const ProviderDetails = ({ match, dispatch, providers, stakes, loading, loadingS
                                                     <tr>
                                                         <td>Owner Disclosure</td>
                                                         <td>
-                                                            <a href={provider.details.ownership_disclosure}>{provider.details.ownership_disclosure}</a>
+                                                            <a target="_blank" href={provider.details.ownership_disclosure}>{provider.details.ownership_disclosure}</a>
                                                         </td>
                                                     </tr>
                                                 )}

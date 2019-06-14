@@ -17,13 +17,9 @@ const SearchFilter = ({ dispatch, searchText }) => {
     return (
         <div className="search-filter">
             <Row>
-                <Col xs="2" sm="2" md="2">
+                <Col xs="12">
                     <StatusServicesFilter />
-                </Col>
-                <Col xs="10" sm="6" md="10">
-                    <FormGroup>
-                        <Input autoComplete="off" type="search" placeholder="Search..." name="text" value={text} onChange={handleChange} />
-                    </FormGroup>
+                    <Input className="search-input" autoComplete="off" type="search" placeholder="Search..." name="text" value={text} onChange={handleChange} />
                 </Col>
             </Row>
         </div>

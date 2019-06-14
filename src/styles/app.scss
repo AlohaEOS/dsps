@@ -13,7 +13,12 @@ body {
     background: #202047;
     color: #ffffff;
 }
-
+a, a:visited {
+    color: #3131ff;
+}
+a:hover {
+    color: #f5ae2a;
+}
 .balances {
     .caption {
         font-weight: bold;
@@ -23,10 +28,13 @@ body {
 .btn {
     &.btn-primary {
         background: #3131ff;
+        font-size: 0.9rem;
+        //background: #2cc9e5;
     }
     &.btn-primary:focus, &.btn-primary:hover, &.btn-primary:active {
         background: #1f1fb5 !important;
-        border-color: #1f1fb5 !important;
+        //border-color: #1f1fb5 !important;
+        //border-color: #ffffff !important;
     }
     &.login-required, &.login-required:hover, &.login-required:active, &.login-required:focus {
         background: rgba($color:  #3131ff, $alpha: 0.7) !important;

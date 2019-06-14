@@ -7,7 +7,7 @@ import StatusFilter from "./status-filter";
 const StatusServicesFilter = () => {
     return (
         <UncontrolledDropdown>
-            <DropdownToggle className="full-width" caret>Filter</DropdownToggle>
+            <DropdownToggle caret>Filters</DropdownToggle>
             <DropdownMenu>
                 <DropdownItem header>Services</DropdownItem>
                 <ServicesFilter />
