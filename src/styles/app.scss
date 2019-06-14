@@ -1,0 +1,47 @@
+@import "./header.scss";
+@import "./footer.scss";
+@import "./modal.scss";
+@import "./table.scss";
+@import "./dsp-packages-list.scss";
+@import "./dsp-list.scss";
+@import "./stakes-list.scss";
+@import "./profile.scss";
+@import "./package-details.scss";
+@import "./provider-details.scss";
+
+body {
+    background: #202047;
+    color: #ffffff;
+}
+
+.balances {
+    .caption {
+        font-weight: bold;
+    }
+}
+
+.btn {
+    &.btn-primary {
+        background: #3131ff;
+    }
+    &.btn-primary:focus, &.btn-primary:hover, &.btn-primary:active {
+        background: #1f1fb5 !important;
+        border-color: #1f1fb5 !important;
+    }
+    &.login-required, &.login-required:hover, &.login-required:active, &.login-required:focus {
+        background: rgba($color:  #3131ff, $alpha: 0.7) !important;
+        border-color: rgba($color:  #3131ff, $alpha: 0.7) !important;
+    }
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.full-width {
+    width: 100% !important;
+}
+
+.blur {
+    opacity: 0.5;
+}

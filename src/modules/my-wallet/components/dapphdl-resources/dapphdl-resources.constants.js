@@ -1,0 +1,4 @@
+export const dapphdlResourcesConstants = {
+    SET_DAPPHDL_AVAILABLE: 'SET_DAPPHDL_AVAILABLE',
+    SET_DAPPHDL_ACCOUNT: 'SET_DAPPHDL_ACCOUNT'
+};

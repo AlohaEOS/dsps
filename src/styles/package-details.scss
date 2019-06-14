@@ -1,0 +1,23 @@
+.package-details {
+    background: #ffffff;
+    border-radius: 3px;
+    min-height: 250px;
+    color: #000000;
+    padding: 35px;
+    .logo {
+        img {
+            width: 200px;
+        }
+    }
+    .name {
+        font-size: 24px;
+        font-weight: bold;
+        margin-top: 25px;
+    }
+    .card {
+        .card-title {
+            font-weight: bold;
+            font-size: 18px;
+        }
+    }
+}

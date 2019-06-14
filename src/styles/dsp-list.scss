@@ -1,0 +1,22 @@
+
+.dsp-list {
+    background: #ffffff;
+    border-radius: 3px;
+    min-height: 250px;
+    .logo {
+        width: 64px;
+    }
+    .login-alert {
+        padding: 50px 25px; 
+    }
+    .table {
+        thead {
+            tr {
+                th {
+                    cursor: pointer;
+                    color: #3131ff;
+                }
+            }
+        }
+    }
+}

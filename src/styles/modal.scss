@@ -1,0 +1,13 @@
+.modal {
+    color: #202047;
+    .modal-header {
+        background: #ffffff;
+        .close {
+            color: #202047 !important;
+        }
+    }
+    .modal-body {
+        background: #ffffff;
+        border-radius: 3px;
+    }
+}
