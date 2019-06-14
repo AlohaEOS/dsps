@@ -17,7 +17,7 @@ const Locations = withScriptjs(
 
 const Map = ({locations}) => {
     return <React.Fragment>
-        {locations && <Locations locations={locations} googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyCaDWprWjvMQj4_ovrYC1ugoe0OoG-OILI&v=3.exp&libraries=geometry,drawing,places" loadingElement={<div style={{ height: `100%` }} />} containerElement={<div style={{ height: `400px` }} />} mapElement={<div style={{ height: `100%` }} />} />}
+        {locations && <Locations locations={locations} googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyBP7vJvCKrx4u8bHA_Rjw_I-cs5D4vJixY&v=3.exp&libraries=geometry,drawing,places" loadingElement={<div style={{ height: `100%` }} />} containerElement={<div style={{ height: `400px` }} />} mapElement={<div style={{ height: `100%` }} />} />}
     </React.Fragment>
 }
 
