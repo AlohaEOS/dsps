@@ -12,7 +12,7 @@ import { myStakesActions } from "../my-stakes/my-stakes.actions";
 import { myUnstakesActions } from "../my-unstakes/my-unstakes.actions";
 
 const Profile = ({ dispatch, loggedIn, auth, stakes, unstakes }) => {
-    
+
     const [activeTab, setActiveTab] = useState("stakes");
 
     useEffect(() => {
@@ -28,7 +28,7 @@ const Profile = ({ dispatch, loggedIn, auth, stakes, unstakes }) => {
 
     return (
         <div>
-            <h2>My Profile</h2>
+            <h2>My Account</h2>
             <br />
 
             <div className="my-profile">
@@ -78,7 +78,7 @@ const Profile = ({ dispatch, loggedIn, auth, stakes, unstakes }) => {
                         </div>
                     </div>
                 )}
-                {!loggedIn && <LoginAlert message="Please login to view user profile." />}
+                {!loggedIn && <LoginAlert message="Please login to view your wallet." />}
             </div>
         </div>
     );
@@ -86,16 +86,16 @@ const Profile = ({ dispatch, loggedIn, auth, stakes, unstakes }) => {
 
 const mapStateToProps = _state => {
     const { loggedIn, auth } = _state.auth;
-    return { 
+    return {
         loggedIn: loggedIn,
         auth: auth,
         stakes: {
-            loading: _state.mystakes.loading, 
+            loading: _state.mystakes.loading,
             loaded: _state.mystakes.loaded,
             data: _state.mystakes.data,
         },
         unstakes: {
-            loading: _state.myunstakes.loading, 
+            loading: _state.myunstakes.loading,
             loaded: _state.myunstakes.loaded,
             data: _state.myunstakes.data,
         }

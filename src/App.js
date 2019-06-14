@@ -21,7 +21,7 @@ const App = () => {
                 <Switch>
                     <Route exact path="/" component={Layout(DSPServices)} />
                     <Route exact path="/providers" component={Layout(DSP)} />
-                    <Route exact path="/profile" component={Layout(Profile)} />
+                    <Route exact path="/myaccount" component={Layout(Profile)} />
                     <Route exact path="/package/:id" component={Layout(PackageDetails)} />
                     <Route exact path="/provider/:name" component={Layout(ProviderDetails)} />
                 </Switch>

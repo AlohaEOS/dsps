@@ -35,8 +35,8 @@ const Header = ({ history, loggingIn, loggedIn, auth }) => {
                         </NavItem>
                         {loggedIn && auth && (
                             <NavItem>
-                                <NavLink exact className="nav-link" to="/profile">
-                                    Profile
+                                <NavLink exact className="nav-link" to="/myaccount">
+                                    My Account
                                 </NavLink>
                             </NavItem>
                         )}
