@@ -17,7 +17,7 @@ export default {
     NETWORK: {
         blockchain: "eos",
         chainId: "aca376f206b8fc25a6ed44dbdc66547c36c6c33e3a119ffbeaef943642f0e906",
-        host: "eos.greymass.com",
+        host: "public.eosinfra.io",
         port: 443,
         protocol: "https"
     },
@@ -25,7 +25,7 @@ export default {
         accounts: [
             {
                 blockchain: "eos",
-                host: "eos.greymass.com",
+                host: "public.eosinfra.io",
                 port: 443,
                 chainId: "aca376f206b8fc25a6ed44dbdc66547c36c6c33e3a119ffbeaef943642f0e906"
             }
@@ -38,7 +38,7 @@ export default {
         'meetone',
         'tokenpocket',
     ],
-    DAPP_ENDPOINT: "https://eos.greymass.com",
+    DAPP_ENDPOINT: "https://public.eosinfra.io",
     ASSETS: {
         DAPP: 'dappservices',
         DAPPHDL: 'dappairhodl1'

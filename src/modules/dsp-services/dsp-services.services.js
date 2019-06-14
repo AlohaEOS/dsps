@@ -6,7 +6,7 @@ const fetchJSON = _jsonURL => {
 };
 
 const list = () => {
-    return commonService.postRequest("https://eos.greymass.com/v1/chain/get_table_rows", {
+    return commonService.postRequest("https://public.eosinfra.io/v1/chain/get_table_rows", {
         code: "dappservices",
         index_position: 1,
         json: true,
