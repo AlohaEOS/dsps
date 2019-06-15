@@ -3,7 +3,7 @@
     border-radius: 3px;
     min-height: 250px;
     color: #000000;
-    padding: 35px;
+    padding: 30px 5px;
     .logo {
         img {
             width: 200px;
@@ -19,5 +19,9 @@
             font-weight: bold;
             font-size: 18px;
         }
+        margin-bottom: 15px;
+    }
+    .btn-primary {
+        margin-bottom: 15px;
     }
 }

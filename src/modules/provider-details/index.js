@@ -55,7 +55,7 @@ const ProviderDetails = ({ match, dispatch, providers, stakes, loading, loadingS
                 {loading && <div className="text-center">Loading</div>}
                 {!loading && provider && (
                     <div>
-                        <Row className="px-5 pt-5">
+                        <Row className="pt-5">
                             <Col sm="12" md="12" lg="4" className="text-center">
                                 <div className="logo text-center">
                                     <Logo account={provider.account} info={provider.details} uri={provider.package_json_uri} />
