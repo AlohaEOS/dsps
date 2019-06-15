@@ -1,7 +1,14 @@
 import { dspConstants } from "./dsp.constants";
 import { sort } from "../../helpers/utils";
 
-const colsList = [{ caption: "Name", field: "dspName", sort: null,  class: "" }, { caption: "Account", field: "account", sort: null,  class: "text-center" }, { caption: "Location", field: "dspCountry", sort: null,  class: "text-center" }, { caption: "Packages", field: "totalPackages", sort: null,  class: "text-center" }, { caption: "Users", field: "totalUser", sort: null,  class: "text-center" }, { caption: "DAPP Staked", field: "totalStaked", sort: "desc", class: "text-center" }];
+const colsList = [
+    { caption: "Name", field: "dspName", sort: null,  class: "text-nowrap" },
+    { caption: "Account", field: "account", sort: null,  class: "text-center text-nowrap" },
+    { caption: "Location", field: "dspCountry", sort: null,  class: "text-center text-nowrap" },
+    { caption: "Packages", field: "totalPackages", sort: null,  class: "text-center text-nowrap" },
+    { caption: "Users", field: "totalUser", sort: null,  class: "text-center text-nowrap" },
+    { caption: "DAPP Staked", field: "totalStaked", sort: "desc", class: "text-center text-nowrap" }
+];
 
 const initialState = {
     sortCol: { caption: "DAPP Staked", field: "totalStaked", sort: "desc" },
