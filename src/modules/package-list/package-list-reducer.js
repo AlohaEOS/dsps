@@ -1,13 +1,13 @@
 import { convertHour, formatNumber, sort } from "../../helpers/utils";
 import { packagelistConstants } from "./package-list.constants";
 const colsList = [
-    { caption: "ID", field: "package_id", sort: "asc", class: "text-center" },
-    { caption: "Service", field: "service_caption", sort: "asc", class: "text-center" },
-    { caption: "Provider", field: "provider", sort: "asc", class: "text-center" },
-    { caption: "Quota", field: "quota_formatted", sort: "asc", format: formatNumber, class: "text-center" },
-    { caption: "Period", field: "package_period", sort: "asc", format: convertHour, class: "text-center" },
-    { caption: "Min Stake", field: "min_stake_quantity_formatted", format: formatNumber, class: "text-center", sort: "asc" },
-    { caption: "Unstake Period", field: "min_unstake_period", sort: "asc", format: convertHour, class: "text-center"}
+    { caption: "ID", field: "package_id", sort: "asc", class: "text-center text-nowrap" },
+    { caption: "Service", field: "service_caption", sort: "asc", class: "text-center text-nowrap" },
+    { caption: "Provider", field: "provider", sort: "asc", class: "text-center text-nowrap" },
+    { caption: "Quota", field: "quota_formatted", sort: "asc", format: formatNumber, class: "text-center text-nowrap" },
+    { caption: "Period", field: "package_period", sort: "asc", format: convertHour, class: "text-center text-nowrap" },
+    { caption: "Min Stake", field: "min_stake_quantity_formatted", format: formatNumber, class: "text-center text-nowrap", sort: "asc" },
+    { caption: "Unstake Period", field: "min_unstake_period", sort: "asc", format: convertHour, class: "text-center text-nowrap"}
 ]
 
 const initialState = {
