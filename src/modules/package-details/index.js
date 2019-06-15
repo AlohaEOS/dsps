@@ -83,7 +83,7 @@ const PackageDetails = ({dispatch, match, loading, results, loggedIn, auth}) => 
                                     </tr>
                                     {details.api_endpoint && <tr>
                                         <td>API Endpoint</td>
-                                        <td><a rel="noopener noreferrer" href={details.api_endpoint} target="_blank">{details.api_endpoint}</a></td>
+                                        <td className="text-break"><a rel="noopener noreferrer" href={details.api_endpoint} target="_blank">{details.api_endpoint}</a></td>
                                     </tr>}
                                 </tbody>
                             </Table>

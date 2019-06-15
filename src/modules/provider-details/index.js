@@ -76,7 +76,7 @@ const ProviderDetails = ({ match, dispatch, providers, stakes, loading, loadingS
                                                 {provider.details.email && (
                                                     <tr>
                                                         <td>Email</td>
-                                                        <td>
+                                                        <td className="text-break">
                                                             <a href={`mailto:${provider.details.email}`}>{provider.details.email}</a>
                                                         </td>
                                                     </tr>
@@ -84,7 +84,7 @@ const ProviderDetails = ({ match, dispatch, providers, stakes, loading, loadingS
                                                 {provider.details.website && (
                                                     <tr>
                                                         <td>Website</td>
-                                                        <td>
+                                                        <td className="text-break">
                                                             <a target="_blank" href={provider.details.website}>{provider.details.website}</a>
                                                         </td>
                                                     </tr>
@@ -92,7 +92,7 @@ const ProviderDetails = ({ match, dispatch, providers, stakes, loading, loadingS
                                                 {provider.details.code_of_conduct && (
                                                     <tr>
                                                         <td>Code Of Conduct</td>
-                                                        <td>
+                                                        <td className="text-break">
                                                             <a target="_blank" href={provider.details.code_of_conduct}>{provider.details.code_of_conduct}</a>
                                                         </td>
                                                     </tr>
@@ -100,7 +100,7 @@ const ProviderDetails = ({ match, dispatch, providers, stakes, loading, loadingS
                                                 {provider.details.ownership_disclosure && (
                                                     <tr>
                                                         <td>Owner Disclosure</td>
-                                                        <td>
+                                                        <td className="text-break">
                                                             <a target="_blank" href={provider.details.ownership_disclosure}>{provider.details.ownership_disclosure}</a>
                                                         </td>
                                                     </tr>
