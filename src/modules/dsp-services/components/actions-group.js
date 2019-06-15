@@ -10,7 +10,7 @@ const ActionsGroup = ({history, packageDetails, loggedIn, auth}) => {
         history.push(`/package/${packageDetails.id}`);
     }
     return (
-        <ButtonGroup size="sm" vertical={true}>
+        <ButtonGroup size="sm">
             <Actions disabled={!loggedIn} id={`actions-${packageDetails.id}`} packageDetails={packageDetails} auth={auth}/>
         </ButtonGroup>
     );

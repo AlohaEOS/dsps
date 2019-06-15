@@ -88,7 +88,7 @@ const DSPServicesList = ({ dispatch, loading, cols, results, filterField, search
                                         {_col.field !== 'package_id' && `${_col.format ? _col.format(_res[_col.field]) : _res[_col.field]}`}
                                     </td>
                                 })}
-                                <td>
+                                <td className="text-nowrap">
                                     <ActionsGroup packageDetails={_res} />
                                 </td>
                             </tr>
