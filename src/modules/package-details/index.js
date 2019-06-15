@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { connect } from "react-redux";
-import { NavLink, withRouter } from "react-router-dom";
-import { Row, Col, Table, Card, CardTitle, CardText } from "reactstrap";
+import { Link, withRouter } from "react-router-dom";
+import { Row, Col, Table, Card, CardTitle, CardText, Button } from "reactstrap";
 
 import { formatQuota, formatStake, convertHour } from "../../helpers/utils";
 
@@ -26,8 +26,7 @@ const PackageDetails = ({dispatch, match, loading, results, loggedIn, auth}) => 
 
     return (
         <div>
-            <h2>Package Details</h2>
-            <br />
+            <h1>Package Details</h1>
 
             <ActionModals />
 
@@ -73,9 +72,9 @@ const PackageDetails = ({dispatch, match, loading, results, loggedIn, auth}) => 
                                     <tr>
                                         <td>Provider Account</td>
                                         <td>
-                                            <NavLink exact className="nav-link p-0" to={`/provider/${details.provider}`}>
+                                            <Button color="secondary"><Link to={`/provider/${details.provider}`}>
                                                 {details.provider}
-                                            </NavLink>
+                                            </Link></Button>
                                         </td>
                                     </tr>
                                     <tr>

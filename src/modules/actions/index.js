@@ -108,15 +108,15 @@ const Actions = ({ dispatch, packageDetails, auth, disabled }) => {
             <DropdownMenu>
                 <DropdownItem header>Stake</DropdownItem>
                 <DropdownItem onClick={stakeDAPP}>DAPP</DropdownItem>
-                <DropdownItem onClick={stakeDAPPHODL}>DAPPH0DL</DropdownItem>
+                <DropdownItem onClick={stakeDAPPHODL}>DAPPHDL</DropdownItem>
                 <DropdownItem divider></DropdownItem>
                 <DropdownItem header>Unstake</DropdownItem>
                 <DropdownItem onClick={unstakeDAPP}>DAPP</DropdownItem>
-                <DropdownItem onClick={unstakeDAPPHODL}>DAPPH0DL</DropdownItem>
+                <DropdownItem onClick={unstakeDAPPHODL}>DAPPHDL</DropdownItem>
                 <DropdownItem divider></DropdownItem>
                 <DropdownItem header>Refund</DropdownItem>
                 <DropdownItem onClick={refundDAPP}>DAPP</DropdownItem>
-                <DropdownItem onClick={refundDAPPHODL}>DAPPH0DL</DropdownItem>
+                <DropdownItem onClick={refundDAPPHODL}>DAPPHDL</DropdownItem>
                 {/* <DropdownItem divider></DropdownItem> */}
                 {/* <DropdownItem>Close</DropdownItem> */}
             </DropdownMenu>

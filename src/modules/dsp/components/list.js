@@ -22,7 +22,7 @@ const DSPList = ({ dispatch, history, providers, loading, stakes, loadingStakes,
     };
 
     return (
-        <Table striped responsive>
+        <Table responsive>
             <thead>
                 <tr>
                     <th />
@@ -76,7 +76,8 @@ const DSPList = ({ dispatch, history, providers, loading, stakes, loadingStakes,
                                     <td>
                                         <Logo account={_provider.account} info={_provider.details} uri={_provider.package_json_uri}/>
                                     </td>
-                                    <td>{_provider.details && _provider.details.name ? _provider.details.name : _provider.account}</td>
+                                    <td><Button onClick={()=>view(_provider.account)} size="sm" color="secondary">{_provider.details && _provider.details.name ? _provider.details.name : _provider.account}</Button></td>
+                                    
                                     <td className="text-center">{_provider.account}</td>
                                     <td className="text-center">{_provider.details && _provider.details.location ? `${_provider.details.location.name}, ${_provider.details.location.country}` : ''}</td>
                                     <td className="text-center">{_provider.totalPackages}</td>
@@ -85,9 +86,6 @@ const DSPList = ({ dispatch, history, providers, loading, stakes, loadingStakes,
                                     </td >
                                     <td className="text-center">
                                         <TotalStaked totalStaked={_provider.totalStaked} stakes={stakes} loading={loadingStakes} account={_provider.account}/>
-                                    </td>
-                                    <td>
-                                        <Button onClick={()=>view(_provider.account)} size="sm" color="primary">Details</Button>
                                     </td>
                                 </tr>
                             );

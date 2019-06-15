@@ -16,8 +16,7 @@ const MyStakes = ({ dispatch, loggedIn, user, loading, loaded, data }) => {
 
     return (
         <div>
-            <h2>My Stakes</h2>
-            <br />
+            <h1>My Stakes</h1>
             <div className="stakes-list">
                 {loggedIn && <StakesList loading={(loading && !loaded)} data={data} />}
                 {!loggedIn && <LoginAlert message="Please login to view stakes." />}

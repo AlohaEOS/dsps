@@ -23,7 +23,7 @@ const SocialMedia = ({data}) => {
                 return (
                     <li key={_name}>
                         <a rel="noopener noreferrer" href={`${appConfig.SOCIAL_MEDIA[_name].url}/${appConfig.SOCIAL_MEDIA[_name].pre_text}${data[_name]}`} target="_blank">
-                            <FontAwesomeIcon icon={appConfig.SOCIAL_MEDIA[_name].icon} size="lg" color="#3131ff" />
+                            <FontAwesomeIcon icon={appConfig.SOCIAL_MEDIA[_name].icon} size="lg" color="#000000" />
                         </a>
                     </li>
                 );
@@ -49,8 +49,7 @@ const ProviderDetails = ({ match, dispatch, providers, stakes, loading, loadingS
 
     return (
         <div>
-            <h2>Package Details</h2>
-            <br />
+            <h1>Provider Details</h1>
 
             <div className="provider-details">
                 {loading && <div className="text-center">Loading</div>}
@@ -138,7 +137,7 @@ const ProviderDetails = ({ match, dispatch, providers, stakes, loading, loadingS
                         </div>}
 
                         <div className="pt-5">
-                            <h5 className="pl-2">Packages</h5>
+                            <h4 className="pl-2">Packages</h4>
                             <PackagesTable search={false} />
                         </div>
                     </div>

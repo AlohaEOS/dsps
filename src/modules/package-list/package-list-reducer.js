@@ -1,7 +1,7 @@
 import { convertHour, formatNumber, sort } from "../../helpers/utils";
 import { packagelistConstants } from "./package-list.constants";
 const colsList = [
-    { caption: "ID", field: "package_id", sort: "asc", class: "" },
+    { caption: "ID", field: "package_id", sort: "asc", class: "text-center" },
     { caption: "Service", field: "service_caption", sort: "asc", class: "text-center" },
     { caption: "Provider", field: "provider", sort: "asc", class: "text-center" },
     { caption: "Quota", field: "quota_formatted", sort: "asc", format: formatNumber, class: "text-center" },

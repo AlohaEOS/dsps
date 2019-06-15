@@ -18,7 +18,7 @@ const Header = ({ history, loggingIn, loggedIn, auth }) => {
         <Navbar className="header" color="light" light expand="md">
             <Container>
                 <NavbarBrand href="/">
-                    <img src="/img/aloha-eos.png" alt="Aloha EOS" />
+                    <img src="/img/aloha-eos-dsps-io.png" alt="Aloha EOS" />
                 </NavbarBrand>
                 <NavbarToggler onClick={toggle} />
                 <Collapse isOpen={open} navbar>

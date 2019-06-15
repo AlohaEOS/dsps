@@ -1,7 +1,8 @@
 
 .dsp-packages-list {
     background: #ffffff;
-    //border-radius: 3px;
+    border-radius: 10px;
+    padding: 10px;
     min-height: 250px;
 
     .login-alert {
@@ -9,17 +10,21 @@
     }
 
     .logo {
-        width: 64px;
+        width: 60px;
     }
     .table-responsive {
         min-height: 350px;
     }
     .table {
         thead {
+            tr th:first-child {
+                //border-top: none;
+            }
             tr {
                 th {
                     cursor: pointer;
-                    color: #3131ff;
+                    color: #6c757d;
+                    font-size: 1.1rem;
                 }
             }
         }
@@ -37,7 +42,7 @@
                             margin-right: 5px;
                             font-weight: normal;
                             font-size: 10px;
-                            background: #3131ff;
+                            background: #FCC615;
                         }
                     }
                 }
@@ -57,6 +62,9 @@
         }
     }
     .search-filter {
+        .search {
+            padding-left: 0px;
+        }
         .dropdown {
             display: inline;
         }
@@ -72,10 +80,7 @@
         margin-bottom: 0;
     }
     .custom-control-input:checked ~ .custom-control-label::before {
-        border-color: #3131ff;
-        background-color: #3131ff;
-    }
-    .dropdown-item.active, .dropdown-item:active {
-        background-color: #3131ff;
+        border-color: #FCC615;
+        background-color: #FCC615;
     }
 }

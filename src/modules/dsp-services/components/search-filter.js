@@ -17,7 +17,7 @@ const SearchFilter = ({ dispatch, searchText }) => {
     return (
         <div className="search-filter">
             <Row>
-                <Col xs="12">
+                <Col xs="12" className="search">
                     <StatusServicesFilter />
                     <Input className="search-input" autoComplete="off" type="search" placeholder="Search..." name="text" value={text} onChange={handleChange} />
                 </Col>

@@ -11,7 +11,7 @@ export default function Layout(Component) {
                 <div>
                     <Header />
                     <Container>
-                        <Row className="mt-3">
+                        <Row noGutters={true}>
                             <Col sm="12">
                                 <Component />
                             </Col>

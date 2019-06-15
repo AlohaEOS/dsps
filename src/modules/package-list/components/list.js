@@ -1,6 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
-import { Table } from "reactstrap";
+import { Table, Button } from "reactstrap";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSortUp, faSortDown, faSort } from "@fortawesome/free-solid-svg-icons";
 import classnames from "classnames";
@@ -80,7 +81,12 @@ const DSPServicesList = ({ dispatch, loading, cols, results, filterField, search
                                     <Logo info={_res} />
                                 </td>
                                 {cols.map((_col, index) => {
-                                    return <td className={_col.class} key={`td-${index}`}>{`${_col.format ? _col.format(_res[_col.field]) : _res[_col.field]}`}</td>;
+                                    return <td key={`td-${index}`} className={_col.class}>
+                                        {_col.field === 'package_id' && <Button><Link to={`/package/${_res.id}`}>
+                                            {`${_col.format ? _col.format(_res[_col.field]) : _res[_col.field]}`}
+                                        </Link></Button>}
+                                        {_col.field !== 'package_id' && `${_col.format ? _col.format(_res[_col.field]) : _res[_col.field]}`}
+                                    </td>
                                 })}
                                 <td>
                                     <ActionsGroup packageDetails={_res} />

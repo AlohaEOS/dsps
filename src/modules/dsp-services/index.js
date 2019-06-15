@@ -14,8 +14,7 @@ const DSPServices = ({ dispatch, loading, loaded, cols, results, filterField, se
 
     return (
         <div>
-            <h2>Packages</h2>
-            <br />
+            <h1>DAPP Service Provider Packages</h1>
 
             <ActionModals />
 

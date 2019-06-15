@@ -15,8 +15,7 @@ const DSP = (props) => {
 
     return (
         <div>
-            <h2>Providers</h2>
-            <br />
+            <h1>DAPP Service Providers</h1>
             <div className="dsp-list">
                 <DSPList 
                     cols={cols}

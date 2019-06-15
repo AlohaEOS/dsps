@@ -7,8 +7,7 @@ import Balances from "./components/balances";
 const MyWallet = ({loggedIn}) => {
     return (
         <div>
-            <h2>My Wallet</h2>
-            <br />
+            <h1>My Wallet</h1>
 
             <div className="wallet">
                 {loggedIn && <Balances />}

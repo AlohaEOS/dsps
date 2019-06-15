@@ -28,8 +28,7 @@ const Profile = ({ dispatch, loggedIn, auth, stakes, unstakes }) => {
 
     return (
         <div>
-            <h2>My Account</h2>
-            <br />
+            <h1>My Account</h1>
 
             <div className="my-profile">
                 {loggedIn && (

@@ -1,9 +1,22 @@
 .footer {
     .liquid-apps-logo {
-        height: 24px;
-        margin-top: 25px;
+        width: 200px;
     }
     .aloha-eos-logo {
         height: 63px;
+    }
+    .contact a {
+        font-size: 30px;
+        margin-right: 10px;
+    }
+    img.logo {
+        width: 200px
+    }
+    .copyright {
+        margin-top: 0px;
+        font-size: 0.8rem;
+    }
+    h5 {
+        font-size: 1.1rem;
     }
 }

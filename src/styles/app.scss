@@ -8,16 +8,29 @@
 @import "./profile.scss";
 @import "./package-details.scss";
 @import "./provider-details.scss";
+@import url("https://fonts.googleapis.com/css?family=Kaushan+Script|Open+Sans");
 
 body {
     background: #202047;
     color: #ffffff;
 }
+.row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
 a, a:visited {
-    color: #3131ff;
+    //color: #72DDFB;
+    color: #dd9d26;
 }
 a:hover {
     color: #f5ae2a;
+}
+h1 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 2.0rem;
+    margin: 15px 0 15px 0;
+    text-align: center;
+    //color: #31e0ff;
 }
 .balances {
     .caption {
@@ -27,21 +40,48 @@ a:hover {
 
 .btn {
     &.btn-primary {
-        background: #3131ff;
+        background: #FCC615;
         font-size: 0.9rem;
-        //background: #2cc9e5;
+        color: #000000;
     }
     &.btn-primary:focus, &.btn-primary:hover, &.btn-primary:active {
-        background: #1f1fb5 !important;
-        //border-color: #1f1fb5 !important;
-        //border-color: #ffffff !important;
+        background: #FCC615 !important;
+        color: #000000;
+        box-shadow: none;
     }
     &.login-required, &.login-required:hover, &.login-required:active, &.login-required:focus {
-        background: rgba($color:  #3131ff, $alpha: 0.7) !important;
-        border-color: rgba($color:  #3131ff, $alpha: 0.7) !important;
+        background: #FCC615;
+    }
+
+    &.btn-primary:not(:disabled):not(.disabled).active {
+        color: #000000;
+        
+    }
+    border: none;
+    border-radius: 0.8rem;
+    &.btn-secondary {
+        background-color: #cbdceb;
+        //background-color: rgba(114, 221, 251, 0.28);
+        color: #000000;
+    }
+    &.btn-secondary:hover {
+        background: #FCC615;
+        color: #000000;
+    }
+    &.btn-secondary a, &.btn-secondary a:hover {
+        color: #ffffff;
+        font-size: 0.9rem;
+        color: #000000;
+    }
+    &.btn-secondary a:hover {
+        text-decoration: none;
+        color: #000000;
     }
 }
-
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle {
+    color: #000000;
+    background-color: #FCC615;
+}
 .pointer {
     cursor: pointer;
 }
@@ -51,5 +91,20 @@ a:hover {
 }
 
 .blur {
-    opacity: 0.3;
+    opacity: 0.2;
 }
+
+.table-hover tbody tr:hover {
+    background-color: initial;
+}
+
+.dropdown-menu {
+    background-color: #eaeaea;
+}
+.dropdown-header {
+    font-weight: bolder;
+}
+.dropdown-item.active, .dropdown-item:active {
+    background-color: #FCC615;
+}
+

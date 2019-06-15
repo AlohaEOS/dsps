@@ -1,7 +1,8 @@
 
 .dsp-list {
     background: #ffffff;
-    //border-radius: 3px;
+    border-radius: 10px;
+    padding: 10px;
     min-height: 250px;
     .logo {
         width: 64px;
@@ -19,4 +20,46 @@
             }
         }
     }
+
+    .table {
+        thead {
+            tr th {
+                border-top: none;
+            }
+            tr {
+                th {
+                    cursor: pointer;
+                    color: #6c757d;
+                    font-size: 1.1rem;
+                }
+            }
+        }
+        tbody {
+            tr {
+                td {
+                    height: 90px;
+                    font-size: 1.0rem;
+                    .provider {
+                        .value {
+                            font-weight: bold;
+                        }
+                        .badge {
+                            padding: 5px;
+                            margin-right: 5px;
+                            font-weight: normal;
+                            font-size: 10px;
+                            background: #FCC615;
+                        }
+                    }
+                }
+            }
+            .deprecated {
+                background-color: #ffe5e7!important;
+            }
+            .selected {
+                background-color: #e0fbe3!important;
+            }
+        }
+    }
+
 }

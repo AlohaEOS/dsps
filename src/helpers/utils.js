@@ -9,6 +9,10 @@ export function formatNumber(_num) {
 }
 
 export function convertHour(_sec) {
+    // Weird
+    if (_sec == 86440) {
+        _sec = 86400;
+    }
     let h = _sec / 3600;
     const m = _sec % 3600;
     if (m > 0) h = h.toFixed(2);

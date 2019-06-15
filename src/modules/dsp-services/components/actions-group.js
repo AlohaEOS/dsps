@@ -11,7 +11,6 @@ const ActionsGroup = ({history, packageDetails, loggedIn, auth}) => {
     }
     return (
         <ButtonGroup size="sm" vertical={true}>
-            <Button onClick={view} color="primary">Details</Button>
             <Actions disabled={!loggedIn} id={`actions-${packageDetails.id}`} packageDetails={packageDetails} auth={auth}/>
         </ButtonGroup>
     );
