@@ -17,7 +17,7 @@ export default {
     NETWORK: {
         blockchain: "eos",
         chainId: "aca376f206b8fc25a6ed44dbdc66547c36c6c33e3a119ffbeaef943642f0e906",
-        host: "public.eosinfra.io",
+        host: "api.main.alohaeos.com",
         port: 443,
         protocol: "https"
     },
@@ -25,7 +25,7 @@ export default {
         accounts: [
             {
                 blockchain: "eos",
-                host: "public.eosinfra.io",
+                host: "api.main.alohaeos.com",
                 port: 443,
                 chainId: "aca376f206b8fc25a6ed44dbdc66547c36c6c33e3a119ffbeaef943642f0e906"
             }
@@ -38,7 +38,7 @@ export default {
         'meetone',
         'tokenpocket',
     ],
-    DAPP_ENDPOINT: "https://public.eosinfra.io",
+    DAPP_ENDPOINT: "https://api.main.alohaeos.com",
     ASSETS: {
         DAPP: 'dappservices',
         DAPPHDL: 'dappairhodl1'
