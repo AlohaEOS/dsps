@@ -55,7 +55,9 @@ const Unstake = ({dispatch, stake, user}) => {
         .then(_res => {
             setTimeout(() => {
                 dispatch(myStakesActions.list(user.accountName));
+                dispatch(myStakesActions.listDAPPHDL(user.accountName));
                 dispatch(myUnstakesActions.list(user.accountName));
+                dispatch(myUnstakesActions.listDAPPHDL(user.accountName));
                 dispatch(dappResourcesActions.getStakedBalance(user.accountName));
                 dispatch(dappResourcesActions.getUnstakingBalance(user.accountName));
                 dispatch(dapphdlResourcesActions.getAvailableBalance(user.accountName));

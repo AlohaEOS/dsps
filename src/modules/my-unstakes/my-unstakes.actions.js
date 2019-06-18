@@ -22,6 +22,32 @@ const list = _account => {
 };
 
 
+const listDAPPHDL = _account => {
+    return dispatch => {
+        dispatch({ type: myUnstakesConstants.DATA_FETCH_REQUEST });
+        myUnstakesService.listDAPPHDL().then(
+            _res => {
+                dispatch({
+                    type: myUnstakesConstants.DATA_FETCH_SUCCESS,
+                    payload: {
+                        data: (_res.rows.filter(_stake => _stake.account === _account)).map(_stake => {
+                            return {
+                                ..._stake,
+                                amount: _stake.amount.replace("DAPP", "DAPPHDL")
+                            }
+                        })
+                    }
+                });
+            },
+            _err => {
+                dispatch({ type: myUnstakesConstants.DATA_FETCH_FAILURE });
+            }
+        );
+    };
+};
+
+
 export const myUnstakesActions = {
     list,
+    listDAPPHDL,
 };

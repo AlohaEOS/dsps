@@ -9,6 +9,12 @@ const list = _account => {
     return client.get_table_staking(_account, {limit: 5000});
 };
 
+
+const listDAPPHDL = () => {
+    return client.get_table_staking(appConfig.ASSETS.DAPPHDL, {limit: 5000});
+};
+
 export const myStakesService = {
-    list
+    list,
+    listDAPPHDL
 };

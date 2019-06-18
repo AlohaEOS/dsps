@@ -9,6 +9,11 @@ const list = _account => {
     return client.get_table_refunds(_account, {limit: 5000});
 };
 
+const listDAPPHDL = () => {
+    return client.get_table_refunds(appConfig.ASSETS.DAPPHDL, {limit: 5000});
+};
+
 export const myUnstakesService = {
-    list
+    list,
+    listDAPPHDL,
 };

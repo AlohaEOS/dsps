@@ -18,7 +18,9 @@ const Profile = ({ dispatch, loggedIn, auth, stakes, unstakes }) => {
     useEffect(() => {
         if (auth) {
             dispatch(myStakesActions.list(auth.accountName));
+            dispatch(myStakesActions.listDAPPHDL(auth.accountName));
             dispatch(myUnstakesActions.list(auth.accountName));
+            dispatch(myUnstakesActions.listDAPPHDL(auth.accountName));
         }
     }, [dispatch, auth]);
 
@@ -92,11 +94,13 @@ const mapStateToProps = _state => {
             loading: _state.mystakes.loading,
             loaded: _state.mystakes.loaded,
             data: _state.mystakes.data,
+            data2: _state.mystakes.data2,
         },
         unstakes: {
             loading: _state.myunstakes.loading,
             loaded: _state.myunstakes.loaded,
             data: _state.myunstakes.data,
+            data2: _state.myunstakes.data2,
         }
     };
 };

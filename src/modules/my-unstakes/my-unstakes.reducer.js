@@ -3,6 +3,10 @@ const initialState = {
     loaded: false,
     loading: false,
     data: null,
+
+    loaded2: false,
+    loading2: false,
+    data2: null,
 };
 
 export function myunstakes(state = initialState, action) {
@@ -24,6 +28,25 @@ export function myunstakes(state = initialState, action) {
             return {
                 ...state,
                 loading: false
+            };
+
+        case myUnstakesConstants.DATA_FETCH_REQUEST:
+            return {
+                ...state,
+                loading2: true,
+                loaded2: false,
+            };
+        case myUnstakesConstants.DATA_FETCH_SUCCESS:
+            return {
+                ...state,
+                loading2: false,
+                data2: action.payload.data,
+                loaded2: true,
+            };
+        case myUnstakesConstants.DATA_FETCH_FAILURE:
+            return {
+                ...state,
+                loading2: false
             };
         default:
             return state;
