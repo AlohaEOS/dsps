@@ -13,7 +13,7 @@ const Logo = ({ dispatch, info }) => {
 
     useEffect(() => {
         if (info.details) {
-            setLogo(info.details.logo && info.details.logo.logo_svg ? info.details.logo.logo_svg : '/img/eos.png');
+            setLogo(info.details.logo && info.details.logo.logo_256 ? info.details.logo.logo_256 : '/img/eos.png');
             setLoading(false);
         } else {
             dspservicesService

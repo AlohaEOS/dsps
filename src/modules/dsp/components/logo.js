@@ -14,7 +14,8 @@ const Logo = ({ dispatch, account, info, uri }) => {
     useEffect(() => {
         if (info && (info.data || info.branding || info.logo) ) {
             let src = info.logo ? info.logo : info.branding;
-            setLogo(src && src.logo_svg ? src.logo_svg : '/img/eos.png');
+            //setLogo(src && src.logo_svg ? src.logo_svg : '/img/eos.png');
+            setLogo(src && src.logo_256 ? src.logo_256 : '/img/eos.png');
             setLoading(false);
         } else {
             dspservicesService
